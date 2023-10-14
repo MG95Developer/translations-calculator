@@ -1,13 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/styles.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-5xl text-green-500 font-bold underline">
-    Hello world!
-  </h1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CUSTOM CSS -->
+		<link href="/dist/styles.css" rel="stylesheet" />
+		<!-- ANIMATIONS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<title>Content Translation</title>
+	</head>
+
+	<body class="bg-custom-black">
+		<div class="custom-container flex flex-col md:flex-row h-screen">
+			<div class="w-full h-screen lg:w-[80%] flex justify-center items-center">
+				<div class="px-4">
+					<h1
+						class="text-left md:text-center pl-5 mb-5 md:mb-10 text-4xl md:text-5xl lg:text-8xl break-words font-bold text-custom-white">
+						Translation Jobs <span class="lg:hidden">Calculator</span>
+					</h1>
+
+					<p
+						class="text-left md:text-center pl-5 italic text-custom-white opacity-50">
+						Pricing: 0,10€ per word. Legal taxes included.
+					</p>
+
+					<div class="mt-6 py-5">
+						<p
+							class="py-4 text-left pl-5 text-call-to-action font-bold text-2xl break-words max-w-[80%]">
+							Type <span class="italic">or paste</span> your text inside the
+							box, to count the words & calculate the translation cost.
+						</p>
+
+						<div class="w-full overflow-hidden py-5 flex">
+							<textarea
+								class="bg-slate-100 w-[95%] mx-auto h-[350px] text-2xl p-2 inputed-words"></textarea>
+						</div>
+
+						<div class="flex flex-col md:flex-row px-5 md:px-15 mt-8">
+							<button
+								class="count-btn cursor-pointer w-full md:w-[70%] mb-5 md:mb-0 bg-custom-green text-custom-black font-bold rounded-full mr-10 px-32 py-2 uppercase hover:opacity-80">
+								calculate
+							</button>
+
+							<button
+								id="reset-btn"
+								class="cursor-pointer w-full md:w-[30%] border border-custom-white text-custom-white px-20 py-2 uppercase rounded-full hover:border-red-400 hover:bg-red-400 delay-150">
+								reset
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="hidden lg:flex w-full lg:w-[20%] justify-center items-center bg-slate-600">
+				<img src="../images/calculator.png" alt="calculator" class="animate__animated animate__bounce animate__delay-3s animate__repeat-2"/>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
 </html>
