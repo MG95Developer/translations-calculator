@@ -555,6 +555,14 @@ video {
   margin-right: 2.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -687,6 +695,10 @@ video {
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -695,6 +707,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -722,6 +739,11 @@ video {
 .text-custom-black {
   --tw-text-opacity: 1;
   color: rgb(48 54 61 / var(--tw-text-opacity));
+}
+
+.text-custom-green {
+  --tw-text-opacity: 1;
+  color: rgb(126 231 135 / var(--tw-text-opacity));
 }
 
 .opacity-50 {
